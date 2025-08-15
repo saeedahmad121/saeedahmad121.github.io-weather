@@ -43,7 +43,7 @@ function getWeather(event) {
           <h2>${cityName}</h2>
           <p>Temperature: ${temperature}°C</p>
           <p>Feels Like: ${feelsLike}°C</p>
-          <p>Wind Speed: ${windSpeed} m/s</p>
+          <p>Wind Speed: ${windSpeed} km/hr</p>
           <p>Humidity: ${humidity}%</p>
           <p>Chance of Rain: ${chanceOfRain}%</p>
         </div>
@@ -67,4 +67,5 @@ document.getElementById('cityName').addEventListener('keydown', function(event) 
   if (event.key === 'Enter') {
     getWeather(event);
   }
+
 });
