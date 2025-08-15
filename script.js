@@ -22,14 +22,12 @@ function getWeather(event) {
       return response.json();
     })
     .then(data => {
-      // Get the current weather and find the max chance of rain for the day
       const currentWeather = data.list[0];
       const temperature = currentWeather.main.temp;
       const feelsLike = currentWeather.main.feels_like;
       const windSpeed = currentWeather.wind.speed;
       const humidity = currentWeather.main.humidity;
 
-      // Find the maximum chance of rain for the next 24 hours (8 data points)
       let maxChanceOfRain = 0;
       for (let i = 0; i < 8; i++) {
         if (data.list[i] && data.list[i].pop > maxChanceOfRain) {
@@ -69,3 +67,4 @@ document.getElementById('cityName').addEventListener('keydown', function(event) 
   }
 
 });
+
