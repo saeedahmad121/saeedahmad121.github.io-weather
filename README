@@ -1,0 +1,33 @@
+# Weather App
+
+A dynamic and intuitive web application that provides real-time weather information for any location. This project demonstrates my ability to integrate third-party APIs, handle asynchronous data, and build a user-friendly interface using modern web development practices.
+
+## Features
+
+-   **Real-time Weather Data:** Fetches and displays current weather conditions (temperature, humidity, wind speed, etc.) for specified cities.
+-   **Location Search:** Allows users to search for weather information by city name.
+-   **Responsive Design:** Optimized for a seamless experience across various devices, from mobile phones to desktop computers.
+-   **Clean and Clear UI:** Presents weather data in an easily digestible and visually appealing format.
+
+## Technologies Used
+
+-   **HTML5:** Structures the layout and content of the weather application.
+-   **CSS3:** Styles the application, providing a modern and responsive design.
+-   **JavaScript (ES6+):** Manages all the interactive elements, API calls, and data manipulation.
+-   **OpenWeather API:** Used to fetch meteorological data. 
+
+## Live Demo
+
+You can view a live demo of the Weather App here:
+
+`https://saeedahmad121.github.io/weather`
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## Contact
+
+-   **Name:** Saeed Ahmad
+-   **Email:** muhammadsaeedahmad121@gmail.com
+-   **GitHub:** [https://github.com/saeedahmad121]
