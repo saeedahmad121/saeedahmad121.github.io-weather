@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabinet Grotsek', sans-serif;
+    background-image: url(weather.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cont {
+    width: 400px;
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    position: relative;
+    height: auto;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#cityName {
+    height: 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    border-bottom: 2px solid white;
+    padding-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+#cityName::placeholder {
+    color: white;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 2px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    font-weight: bold;
+    scale: 0.8;
+}
+
+/* Updated styles for the weather details */
+#weatherResult {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    line-height: 2; /* Increased line height */
+}
+
+.weather-details h2 {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.weather-details h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.weather-details p {
+    font-size: 20px; /* Increased font size */
+    margin: 5px 0;
+}
